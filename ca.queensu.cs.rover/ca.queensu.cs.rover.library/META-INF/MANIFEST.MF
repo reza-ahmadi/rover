@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Library
+Bundle-SymbolicName: ca.queensu.cs.rover.library;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ca.queensu.cs.rover.library.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.papyrus.uml.diagram.wizards;bundle-version="2.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

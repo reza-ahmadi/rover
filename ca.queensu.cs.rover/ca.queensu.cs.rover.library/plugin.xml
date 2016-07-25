@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.uml.diagram.wizards.templates">
+      <template
+            di_file="libraries/UMLRT-Rover.di"
+            file="libraries/UMLRT-Rover.uml"
+            id="ca.queensu.cs.rover.library.rover"
+            language="UMLRT"
+            name="Rover template"
+            notation_file="libraries/UMLRT-Rover.notation">
+      </template>
+   </extension>
+
+</plugin>

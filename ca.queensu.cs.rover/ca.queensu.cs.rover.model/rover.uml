@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLRealTime="http://www.eclipse.org/papyrus/umlrt" xmlns:UMLRealTimeStateMach="http://www.eclipse.org/papyrus/umlrt/statemachine" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_rZAAEEIZEeaoHPpII-6Tdw" name="rover">
+    <packagedElement xmi:type="uml:Class" xmi:id="_rZAAEUIZEeaoHPpII-6Tdw" name="Top" isActive="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAEkIZEeaoHPpII-6Tdw" name="controlSoftware" visibility="protected" type="_rZAAIUIZEeaoHPpII-6Tdw" isOrdered="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rZAAE0IZEeaoHPpII-6Tdw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZAAFEIZEeaoHPpII-6Tdw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAFUIZEeaoHPpII-6Tdw" name="rover" visibility="protected" type="_rZAnPkIZEeaoHPpII-6Tdw" isOrdered="true" aggregation="composite">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rZAAFkIZEeaoHPpII-6Tdw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZAAF0IZEeaoHPpII-6Tdw" value="1"/>
+      </ownedAttribute>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAAGEIZEeaoHPpII-6Tdw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAGUIZEeaoHPpII-6Tdw" partWithPort="_rZAAEkIZEeaoHPpII-6Tdw" role="_rZAAI0IZEeaoHPpII-6Tdw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAGkIZEeaoHPpII-6Tdw" partWithPort="_rZAAFUIZEeaoHPpII-6Tdw" role="_rZAnSkIZEeaoHPpII-6Tdw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAAG0IZEeaoHPpII-6Tdw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAHEIZEeaoHPpII-6Tdw" partWithPort="_rZAAEkIZEeaoHPpII-6Tdw" role="_rZAAJEIZEeaoHPpII-6Tdw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAHUIZEeaoHPpII-6Tdw" partWithPort="_rZAAFUIZEeaoHPpII-6Tdw" role="_rZAnSEIZEeaoHPpII-6Tdw"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAAHkIZEeaoHPpII-6Tdw">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAH0IZEeaoHPpII-6Tdw" partWithPort="_rZAAEkIZEeaoHPpII-6Tdw" role="_rZAAIkIZEeaoHPpII-6Tdw"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAAIEIZEeaoHPpII-6Tdw" partWithPort="_rZAAFUIZEeaoHPpII-6Tdw" role="_rZAnSUIZEeaoHPpII-6Tdw"/>
+      </ownedConnector>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_rZAAIUIZEeaoHPpII-6Tdw" name="ControlSoftware" classifierBehavior="_rZAAJUIZEeaoHPpII-6Tdw" isActive="true">
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAIkIZEeaoHPpII-6Tdw" name="engine" type="_rZAALkIZEeaoHPpII-6Tdw" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAI0IZEeaoHPpII-6Tdw" name="detection" type="_rZAASkIZEeaoHPpII-6Tdw" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAJEIZEeaoHPpII-6Tdw" name="temperature" type="_rZAAW0IZEeaoHPpII-6Tdw" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_gkBTMEIcEeaoHPpII-6Tdw" name="timer" aggregation="composite">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Port" xmi:id="_lamAkEIcEeaoHPpII-6Tdw" name="log" aggregation="composite">
+        <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6kIb0IeXEeSVyrlWP4nYew"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_rZAAJUIZEeaoHPpII-6Tdw" name="ControlSoftwareStateMachine" isReentrant="false">
+        <region xmi:type="uml:Region" xmi:id="_rZAAJkIZEeaoHPpII-6Tdw" name="Region">
+          <transition xmi:type="uml:Transition" xmi:id="_rZAAJ0IZEeaoHPpII-6Tdw" name="init" source="_rZAAKUIZEeaoHPpII-6Tdw" target="_rZAAKkIZEeaoHPpII-6Tdw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_rZAAKEIZEeaoHPpII-6Tdw" name="STANDBY_2_FORWARD" source="_rZAAKkIZEeaoHPpII-6Tdw" target="_rZAAK0IZEeaoHPpII-6Tdw">
+            <trigger xmi:type="uml:Trigger" xmi:id="_Z0g40EIdEeaoHPpII-6Tdw" port="_gkBTMEIcEeaoHPpII-6Tdw">
+              <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_Trz1MEIdEeaoHPpII-6Tdw" guard="_NO2t8EIfEeaoHPpII-6Tdw" kind="internal" source="_rZAAK0IZEeaoHPpII-6Tdw" target="_rZAAK0IZEeaoHPpII-6Tdw">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_NO2t8EIfEeaoHPpII-6Tdw" name="isGreaterThanThreshold">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_S4yK4EIfEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>return (umlrtparam_distance > threshold) || (umlrtparam_distance &lt; 0);</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_pbZHEEIdEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>detection.startDetection().send();</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_eRbJAEIdEeaoHPpII-6Tdw" event="_rZAAWUIZEeaoHPpII-6Tdw" port="_rZAAI0IZEeaoHPpII-6Tdw"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_uZz28EIfEeaoHPpII-6Tdw" guard="_RGhtoEIgEeaoHPpII-6Tdw" source="_rZAAK0IZEeaoHPpII-6Tdw" target="_m6jQEEIfEeaoHPpII-6Tdw">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_RGhtoEIgEeaoHPpII-6Tdw" name="isLowerThanThreshold">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_Vg94oEIgEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>return (umlrtparam_distance &lt;= threshold) &amp;&amp; (umlrtparam_distance >= 0);</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_30dXAEIgEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>engine.stop().send();</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_yczLQEIfEeaoHPpII-6Tdw" event="_rZAAWUIZEeaoHPpII-6Tdw" port="_rZAAI0IZEeaoHPpII-6Tdw"/>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_P4eJoEIhEeaoHPpII-6Tdw" name="BACKWARDS_2_RIGHT" source="_m6jQEEIfEeaoHPpII-6Tdw" target="_NyWxsEIhEeaoHPpII-6Tdw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_VG3hIEIhEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>engine.stop().send();</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_aZcOAEIhEeaoHPpII-6Tdw" port="_gkBTMEIcEeaoHPpII-6Tdw">
+              <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_-czHgEIhEeaoHPpII-6Tdw" name="RIGHT_2_FORWARDS" source="_NyWxsEIhEeaoHPpII-6Tdw" target="_rZAAK0IZEeaoHPpII-6Tdw">
+            <trigger xmi:type="uml:Trigger" xmi:id="_C2zNoEIiEeaoHPpII-6Tdw" event="_rZAAQkIZEeaoHPpII-6Tdw" port="_rZAAIkIZEeaoHPpII-6Tdw"/>
+          </transition>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_rZAAKUIZEeaoHPpII-6Tdw">
+            <name xsi:nil="true"/>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_rZAAKkIZEeaoHPpII-6Tdw" name="STANDBY">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_OSD-wEIcEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>timer.informIn(UMLRTTimespec(4,0));
+
+log.log (&quot;ControlSoftware sanding by&quot;);</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_rZAAK0IZEeaoHPpII-6Tdw" name="MOVING_FORWARD">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_PcULYEIcEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>log.log(&quot;ControlSoftware forward&quot;);
+engine.moveForward().send();
+detection.startDetection().send();</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_m6jQEEIfEeaoHPpII-6Tdw" name="MOVING_BACKWARDS">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_FYQTMEIhEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>log.log(&quot;ControlSoftware backward&quot;);
+engine.moveBackward().send();
+timer.informIn(UMLRTTimespec(0.7,0));</body>
+            </entry>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_NyWxsEIhEeaoHPpII-6Tdw" name="TURNING_RIGHT">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_zBVJwEIhEeaoHPpII-6Tdw">
+              <language>C++</language>
+              <body>engine.turnRight(138).send();</body>
+            </entry>
+          </subvertex>
+        </region>
+      </ownedBehavior>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_rZAALEIZEeaoHPpII-6Tdw" name="UMLRT-Rover">
+      <packagedElement xmi:type="uml:Package" xmi:id="_rZAALUIZEeaoHPpII-6Tdw" name="Engine">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_rZAALkIZEeaoHPpII-6Tdw" name="Engine">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAAL0IZEeaoHPpII-6Tdw" client="_rZAALkIZEeaoHPpII-6Tdw" supplier="_rZAAMUIZEeaoHPpII-6Tdw" contract="_rZAAMUIZEeaoHPpII-6Tdw"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAAMEIZEeaoHPpII-6Tdw" client="_rZAALkIZEeaoHPpII-6Tdw" supplier="_rZAAP0IZEeaoHPpII-6Tdw" contract="_rZAAP0IZEeaoHPpII-6Tdw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAMUIZEeaoHPpII-6Tdw" name="Engine">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAMkIZEeaoHPpII-6Tdw" name="turnedLeft"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAM0IZEeaoHPpII-6Tdw" name="turnedRight"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAANEIZEeaoHPpII-6Tdw" name="stopped"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAANUIZEeaoHPpII-6Tdw" name="Engine~">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAANkIZEeaoHPpII-6Tdw" name="moveForward"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAN0IZEeaoHPpII-6Tdw" name="moveBackwards"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAOEIZEeaoHPpII-6Tdw" name="turnLeft">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rZAAOUIZEeaoHPpII-6Tdw" name="angle">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAOkIZEeaoHPpII-6Tdw" name="turnRight">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rZAAO0IZEeaoHPpII-6Tdw" name="angle">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAPEIZEeaoHPpII-6Tdw" name="stop"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAPUIZEeaoHPpII-6Tdw" client="_rZAALkIZEeaoHPpII-6Tdw" supplier="_rZAANUIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_rZAAPkIZEeaoHPpII-6Tdw" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAP0IZEeaoHPpII-6Tdw" name="EngineIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAQEIZEeaoHPpII-6Tdw" client="_rZAALkIZEeaoHPpII-6Tdw" supplier="_rZAAP0IZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAQUIZEeaoHPpII-6Tdw" operation="_rZAAMkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAQkIZEeaoHPpII-6Tdw" operation="_rZAAM0IZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAQ0IZEeaoHPpII-6Tdw" operation="_rZAANEIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAREIZEeaoHPpII-6Tdw" operation="_rZAANkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAARUIZEeaoHPpII-6Tdw" operation="_rZAAN0IZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAARkIZEeaoHPpII-6Tdw" operation="_rZAAOEIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAR0IZEeaoHPpII-6Tdw" operation="_rZAAOkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAASEIZEeaoHPpII-6Tdw" operation="_rZAAPEIZEeaoHPpII-6Tdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_rZAASUIZEeaoHPpII-6Tdw" name="Detection">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_rZAASkIZEeaoHPpII-6Tdw" name="Detection">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAAS0IZEeaoHPpII-6Tdw" client="_rZAASkIZEeaoHPpII-6Tdw" supplier="_rZAATUIZEeaoHPpII-6Tdw" contract="_rZAATUIZEeaoHPpII-6Tdw"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAATEIZEeaoHPpII-6Tdw" client="_rZAASkIZEeaoHPpII-6Tdw" supplier="_rZAAVUIZEeaoHPpII-6Tdw" contract="_rZAAVUIZEeaoHPpII-6Tdw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAATUIZEeaoHPpII-6Tdw" name="Detection">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAATkIZEeaoHPpII-6Tdw" name="obstacleDetected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rZAAT0IZEeaoHPpII-6Tdw" name="distance">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAUEIZEeaoHPpII-6Tdw" name="Detection~">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAUUIZEeaoHPpII-6Tdw" name="startDetection"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAUkIZEeaoHPpII-6Tdw" name="stopDetection"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAU0IZEeaoHPpII-6Tdw" client="_rZAASkIZEeaoHPpII-6Tdw" supplier="_rZAAUEIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_rZAAVEIZEeaoHPpII-6Tdw" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAVUIZEeaoHPpII-6Tdw" name="DetectionIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAVkIZEeaoHPpII-6Tdw" client="_rZAASkIZEeaoHPpII-6Tdw" supplier="_rZAAVUIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAV0IZEeaoHPpII-6Tdw" operation="_rZAAUUIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAWEIZEeaoHPpII-6Tdw" operation="_rZAAUkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAWUIZEeaoHPpII-6Tdw" operation="_rZAATkIZEeaoHPpII-6Tdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_rZAAWkIZEeaoHPpII-6Tdw" name="Temperature">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_rZAAW0IZEeaoHPpII-6Tdw" name="Temperature">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAAXEIZEeaoHPpII-6Tdw" client="_rZAAW0IZEeaoHPpII-6Tdw" supplier="_rZAAXkIZEeaoHPpII-6Tdw" contract="_rZAAXkIZEeaoHPpII-6Tdw"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_rZAAXUIZEeaoHPpII-6Tdw" client="_rZAAW0IZEeaoHPpII-6Tdw" supplier="_rZAAZkIZEeaoHPpII-6Tdw" contract="_rZAAZkIZEeaoHPpII-6Tdw"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAXkIZEeaoHPpII-6Tdw" name="Temperature">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAX0IZEeaoHPpII-6Tdw" name="dataCollected">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_rZAAYEIZEeaoHPpII-6Tdw" name="value">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDouble"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAYUIZEeaoHPpII-6Tdw" name="Temperature~">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAYkIZEeaoHPpII-6Tdw" name="startCollecting"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_rZAAY0IZEeaoHPpII-6Tdw" name="stopCollecting"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAZEIZEeaoHPpII-6Tdw" client="_rZAAW0IZEeaoHPpII-6Tdw" supplier="_rZAAYUIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_rZAAZUIZEeaoHPpII-6Tdw" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_rZAAZkIZEeaoHPpII-6Tdw" name="TemperatureIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_rZAAZ0IZEeaoHPpII-6Tdw" client="_rZAAW0IZEeaoHPpII-6Tdw" supplier="_rZAAZkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAaEIZEeaoHPpII-6Tdw" operation="_rZAAX0IZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAaUIZEeaoHPpII-6Tdw" operation="_rZAAYkIZEeaoHPpII-6Tdw"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_rZAAakIZEeaoHPpII-6Tdw" operation="_rZAAY0IZEeaoHPpII-6Tdw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rZAAa0IZEeaoHPpII-6Tdw" name="ThermometerSensor" classifierBehavior="_rZAAb0IZEeaoHPpII-6Tdw" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAbEIZEeaoHPpII-6Tdw" name="temperature" visibility="public" type="_rZAAW0IZEeaoHPpII-6Tdw" aggregation="composite" isBehavior="true" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAbUIZEeaoHPpII-6Tdw" name="timer" aggregation="composite">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAbkIZEeaoHPpII-6Tdw" name="timerId">
+          <type xmi:type="uml:Class" href="platform:/plugin/org.eclipse.papyrusrt.rts/libraries/UMLRT-RTS.uml#_6qkTMGXmEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_rZAAb0IZEeaoHPpII-6Tdw" name="TemperatureSensorStateMachine" isReentrant="false">
+          <region xmi:type="uml:Region" xmi:id="_rZAAcEIZEeaoHPpII-6Tdw" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAcUIZEeaoHPpII-6Tdw" source="_rZAAekIZEeaoHPpII-6Tdw" target="_rZAAe0IZEeaoHPpII-6Tdw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAckIZEeaoHPpII-6Tdw" source="_rZAAe0IZEeaoHPpII-6Tdw" target="_rZAAfEIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAc0IZEeaoHPpII-6Tdw" name="timer initialization">
+                <language>C++</language>
+                <body>timerId = timer.informEvery(UMLRTTimespec(1,0),4);</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAdEIZEeaoHPpII-6Tdw" event="_rZAAaUIZEeaoHPpII-6Tdw" port="_rZAAbEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAdUIZEeaoHPpII-6Tdw" source="_rZAAfEIZEeaoHPpII-6Tdw" target="_rZAAe0IZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAdkIZEeaoHPpII-6Tdw" name="timer reset">
+                <language>C++</language>
+                <body>timer.cancelTimer(timerId);</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAd0IZEeaoHPpII-6Tdw" event="_rZAAakIZEeaoHPpII-6Tdw" port="_rZAAbEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAeEIZEeaoHPpII-6Tdw" source="_rZAAfEIZEeaoHPpII-6Tdw" target="_rZAAfEIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAeUIZEeaoHPpII-6Tdw" port="_rZAAbUIZEeaoHPpII-6Tdw">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_rZAAekIZEeaoHPpII-6Tdw" name="init"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAAe0IZEeaoHPpII-6Tdw" name="IDLE"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAAfEIZEeaoHPpII-6Tdw" name="COLLECTING">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAfUIZEeaoHPpII-6Tdw" name="collectingData">
+                <language>C++</language>
+                <body>// do something to get the temperature value from the sensor
+// then send it through the temperature protocol
+// eg. temperature.dataCollected(temp); </body>
+              </entry>
+            </subvertex>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rZAAfkIZEeaoHPpII-6Tdw" name="DetectionSensor" classifierBehavior="_rZAAhEIZEeaoHPpII-6Tdw" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAf0IZEeaoHPpII-6Tdw" name="detection" visibility="public" type="_rZAASkIZEeaoHPpII-6Tdw" aggregation="composite" isBehavior="true" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAgEIZEeaoHPpII-6Tdw" name="threshold">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rZAAgUIZEeaoHPpII-6Tdw" value="1024"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAgkIZEeaoHPpII-6Tdw" name="timerId">
+          <type xmi:type="uml:Class" href="platform:/plugin/org.eclipse.papyrusrt.rts/libraries/UMLRT-RTS.uml#_6qkTMGXmEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAg0IZEeaoHPpII-6Tdw" name="timer" aggregation="composite">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_rZAAhEIZEeaoHPpII-6Tdw" name="DetectionStateMachine" isReentrant="false">
+          <region xmi:type="uml:Region" xmi:id="_rZAAhUIZEeaoHPpII-6Tdw" name="Region">
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAhkIZEeaoHPpII-6Tdw" source="_rZAAj0IZEeaoHPpII-6Tdw" target="_rZAAkEIZEeaoHPpII-6Tdw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAh0IZEeaoHPpII-6Tdw" source="_rZAAkEIZEeaoHPpII-6Tdw" target="_rZAAkUIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAiEIZEeaoHPpII-6Tdw" name="timer initialization">
+                <language>C++</language>
+                <body>timerId = timer.informEvery(UMLRTTimespec(1,0),4);</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAiUIZEeaoHPpII-6Tdw" event="_rZAAV0IZEeaoHPpII-6Tdw" port="_rZAAf0IZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAikIZEeaoHPpII-6Tdw" source="_rZAAkUIZEeaoHPpII-6Tdw" target="_rZAAkEIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAi0IZEeaoHPpII-6Tdw" name="timer reset">
+                <language>C++</language>
+                <body>timer.cancelTimer(timerId);</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAjEIZEeaoHPpII-6Tdw" event="_rZAAWEIZEeaoHPpII-6Tdw" port="_rZAAf0IZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAAjUIZEeaoHPpII-6Tdw" source="_rZAAkUIZEeaoHPpII-6Tdw" target="_rZAAkUIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAAjkIZEeaoHPpII-6Tdw" port="_rZAAg0IZEeaoHPpII-6Tdw">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_rZAAj0IZEeaoHPpII-6Tdw" name="init"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAAkEIZEeaoHPpII-6Tdw" name="IDLE"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAAkUIZEeaoHPpII-6Tdw" name="DETECTING">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAAkkIZEeaoHPpII-6Tdw" name="detectingPresence">
+                <language>C++</language>
+                <body>// do something to get the distance value from the sensor
+// then send it through the detection protocol
+// eg. detection.obstacleDetected(distance); </body>
+              </entry>
+            </subvertex>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rZAAk0IZEeaoHPpII-6Tdw" name="EngineController" classifierBehavior="_rZAnIEIZEeaoHPpII-6Tdw" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAlEIZEeaoHPpII-6Tdw" name="engine" visibility="public" type="_rZAALkIZEeaoHPpII-6Tdw" aggregation="composite" isBehavior="true" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAAlUIZEeaoHPpII-6Tdw" name="timerId">
+          <type xmi:type="uml:Class" href="platform:/plugin/org.eclipse.papyrusrt.rts/libraries/UMLRT-RTS.uml#_6qkTMGXmEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAAlkIZEeaoHPpII-6Tdw" name="timer" aggregation="composite">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_rZAnIEIZEeaoHPpII-6Tdw" name="EngineControllerStateMachine" isReentrant="false">
+          <region xmi:type="uml:Region" xmi:id="_rZAnIUIZEeaoHPpII-6Tdw" name="Region">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_rZAnIkIZEeaoHPpII-6Tdw">
+              <body>Transition between states (for example to stop the rover rotating and begin to move forward, etc.) should be considered.</body>
+            </ownedComment>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnI0IZEeaoHPpII-6Tdw" source="_rZAnNEIZEeaoHPpII-6Tdw" target="_rZAnNUIZEeaoHPpII-6Tdw"/>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnJEIZEeaoHPpII-6Tdw" source="_rZAnNUIZEeaoHPpII-6Tdw" target="_rZAnNkIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_BlzqYEIjEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>timerId = timer.informIn(UMLRTTimespec(0, (umlrtparam_angle / 360.0) * 1000000000));</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnJUIZEeaoHPpII-6Tdw" event="_rZAARkIZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnJkIZEeaoHPpII-6Tdw" source="_rZAnNkIZEeaoHPpII-6Tdw" target="_rZAnNUIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_F4ckQEIjEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>engine.turnedLeft().send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnJ0IZEeaoHPpII-6Tdw" port="_rZAAlkIZEeaoHPpII-6Tdw">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnKEIZEeaoHPpII-6Tdw" source="_rZAnNUIZEeaoHPpII-6Tdw" target="_rZAnOEIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Q1f9IEIiEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>timerId = timer.informIn(UMLRTTimespec(0, (umlrtparam_angle / 360.0) * 1000000000));</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnKUIZEeaoHPpII-6Tdw" event="_rZAAR0IZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnKkIZEeaoHPpII-6Tdw" source="_rZAnOEIZEeaoHPpII-6Tdw" target="_rZAnNUIZEeaoHPpII-6Tdw">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_V7zIkEIiEeaoHPpII-6Tdw">
+                <language>C++</language>
+                <body>engine.turnedRight().send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnK0IZEeaoHPpII-6Tdw" port="_rZAAlkIZEeaoHPpII-6Tdw">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnLEIZEeaoHPpII-6Tdw" source="_rZAnNUIZEeaoHPpII-6Tdw" target="_rZAnOkIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnLUIZEeaoHPpII-6Tdw" event="_rZAAREIZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnLkIZEeaoHPpII-6Tdw" source="_rZAnOkIZEeaoHPpII-6Tdw" target="_rZAnNUIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnL0IZEeaoHPpII-6Tdw" event="_rZAASEIZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnMEIZEeaoHPpII-6Tdw" source="_rZAnNUIZEeaoHPpII-6Tdw" target="_rZAnPEIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnMUIZEeaoHPpII-6Tdw" event="_rZAAREIZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_rZAnMkIZEeaoHPpII-6Tdw" source="_rZAnPEIZEeaoHPpII-6Tdw" target="_rZAnNUIZEeaoHPpII-6Tdw">
+              <trigger xmi:type="uml:Trigger" xmi:id="_rZAnM0IZEeaoHPpII-6Tdw" event="_rZAASEIZEeaoHPpII-6Tdw" port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_rZAnNEIZEeaoHPpII-6Tdw" name="init"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAnNUIZEeaoHPpII-6Tdw" name="IDLE"/>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAnNkIZEeaoHPpII-6Tdw" name="TurningLeft">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAnN0IZEeaoHPpII-6Tdw" name="turningLeft">
+                <language>C++</language>
+                <body>// get the angle from the turnLeft message's parameters
+// then compute it to get the time to set the timer
+// it assumes that the rotation of the rover is done at a fix speed
+// time = f(angle, speed) with angle the variable, speed the const
+// then, set the timer using informsAt</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAnOEIZEeaoHPpII-6Tdw" name="TurningRight">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAnOUIZEeaoHPpII-6Tdw" name="turningRight">
+                <language>C++</language>
+                <body>// get the angle from the turnRight message's parameters
+// then compute it to get the time to set the timer
+// it assumes that the rotation of the rover is done at a fix speed
+// time = f(angle, speed) with angle the variable, speed the const
+// then, set the timer using informsAt</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAnOkIZEeaoHPpII-6Tdw" name="MovingForward">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAnO0IZEeaoHPpII-6Tdw" name="movingForward">
+                <language>C++</language>
+                <body>// do something</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_rZAnPEIZEeaoHPpII-6Tdw" name="MovingBackwards">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_rZAnPUIZEeaoHPpII-6Tdw" name="movingBackwards">
+                <language>C++</language>
+                <body>// do something</body>
+              </entry>
+            </subvertex>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_rZAnPkIZEeaoHPpII-6Tdw" name="Rover" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAnP0IZEeaoHPpII-6Tdw" name="thermometerSensor" visibility="protected" type="_rZAAa0IZEeaoHPpII-6Tdw" isOrdered="true" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rZAnQEIZEeaoHPpII-6Tdw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZAnQUIZEeaoHPpII-6Tdw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAnQkIZEeaoHPpII-6Tdw" name="detectionSensor" visibility="protected" type="_rZAAfkIZEeaoHPpII-6Tdw" isOrdered="true" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rZAnQ0IZEeaoHPpII-6Tdw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZAnREIZEeaoHPpII-6Tdw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rZAnRUIZEeaoHPpII-6Tdw" name="engineController" visibility="protected" type="_rZAAk0IZEeaoHPpII-6Tdw" isOrdered="true" aggregation="composite">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_rZAnRkIZEeaoHPpII-6Tdw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_rZAnR0IZEeaoHPpII-6Tdw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAnSEIZEeaoHPpII-6Tdw" name="temperature" visibility="public" type="_rZAAW0IZEeaoHPpII-6Tdw" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAnSUIZEeaoHPpII-6Tdw" name="engine" visibility="public" type="_rZAALkIZEeaoHPpII-6Tdw" aggregation="composite" isConjugated="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_rZAnSkIZEeaoHPpII-6Tdw" name="detection" visibility="public" type="_rZAASkIZEeaoHPpII-6Tdw" aggregation="composite" isConjugated="true"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAnS0IZEeaoHPpII-6Tdw" name="engineRelay">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnTEIZEeaoHPpII-6Tdw" role="_rZAnSUIZEeaoHPpII-6Tdw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnTUIZEeaoHPpII-6Tdw" partWithPort="_rZAnRUIZEeaoHPpII-6Tdw" role="_rZAAlEIZEeaoHPpII-6Tdw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAnTkIZEeaoHPpII-6Tdw" name="temperatureRelay">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnT0IZEeaoHPpII-6Tdw" role="_rZAnSEIZEeaoHPpII-6Tdw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnUEIZEeaoHPpII-6Tdw" partWithPort="_rZAnP0IZEeaoHPpII-6Tdw" role="_rZAAbEIZEeaoHPpII-6Tdw"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_rZAnUUIZEeaoHPpII-6Tdw" name="detectionRelay">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnUkIZEeaoHPpII-6Tdw" role="_rZAnSkIZEeaoHPpII-6Tdw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rZAnU0IZEeaoHPpII-6Tdw" partWithPort="_rZAnQkIZEeaoHPpII-6Tdw" role="_rZAAf0IZEeaoHPpII-6Tdw"/>
+        </ownedConnector>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnVEIZEeaoHPpII-6Tdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnVUIZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnVkIZEeaoHPpII-6Tdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnV0IZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
+      </profileApplication>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnWEIZEeaoHPpII-6Tdw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnWUIZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
+      </profileApplication>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnWkIZEeaoHPpII-6Tdw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnW0IZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnXEIZEeaoHPpII-6Tdw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnXUIZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rZAnXkIZEeaoHPpII-6Tdw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rZAnX0IZEeaoHPpII-6Tdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
+    </profileApplication>
+  </uml:Model>
+  <standard:ModelLibrary xmi:id="_rZAnYEIZEeaoHPpII-6Tdw" base_Package="_rZAAEEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_rZAnYUIZEeaoHPpII-6Tdw" base_Package="_rZAALUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnYkIZEeaoHPpII-6Tdw" base_Interface="_rZAAMUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnY0IZEeaoHPpII-6Tdw" base_Interface="_rZAANUIZEeaoHPpII-6Tdw" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnZEIZEeaoHPpII-6Tdw" base_Interface="_rZAAP0IZEeaoHPpII-6Tdw" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_rZAnZUIZEeaoHPpII-6Tdw" base_Collaboration="_rZAALkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_rZAnZkIZEeaoHPpII-6Tdw" base_Package="_rZAASUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnZ0IZEeaoHPpII-6Tdw" base_Interface="_rZAATUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnaEIZEeaoHPpII-6Tdw" base_Interface="_rZAAUEIZEeaoHPpII-6Tdw" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnaUIZEeaoHPpII-6Tdw" base_Interface="_rZAAVUIZEeaoHPpII-6Tdw" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_rZAnakIZEeaoHPpII-6Tdw" base_Collaboration="_rZAASkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_rZAna0IZEeaoHPpII-6Tdw" base_Package="_rZAAWkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnbEIZEeaoHPpII-6Tdw" base_Interface="_rZAAXkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnbUIZEeaoHPpII-6Tdw" base_Interface="_rZAAYUIZEeaoHPpII-6Tdw" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_rZAnbkIZEeaoHPpII-6Tdw" base_Interface="_rZAAZkIZEeaoHPpII-6Tdw" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_rZAnb0IZEeaoHPpII-6Tdw" base_Collaboration="_rZAAW0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAncEIZEeaoHPpII-6Tdw" base_Class="_rZAAa0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAncUIZEeaoHPpII-6Tdw" base_Class="_rZAAfkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAnckIZEeaoHPpII-6Tdw" base_Class="_rZAAk0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnc0IZEeaoHPpII-6Tdw" base_Port="_rZAAlEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAndEIZEeaoHPpII-6Tdw" base_Port="_rZAAf0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAndUIZEeaoHPpII-6Tdw" base_Port="_rZAAbEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAndkIZEeaoHPpII-6Tdw" base_Class="_rZAnPkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:CapsulePart xmi:id="_rZAnd0IZEeaoHPpII-6Tdw" base_Property="_rZAnP0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:CapsulePart xmi:id="_rZAneEIZEeaoHPpII-6Tdw" base_Property="_rZAnQkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:CapsulePart xmi:id="_rZAneUIZEeaoHPpII-6Tdw" base_Property="_rZAnRUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnekIZEeaoHPpII-6Tdw" base_Port="_rZAnSEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAne0IZEeaoHPpII-6Tdw" base_Port="_rZAnSUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnfEIZEeaoHPpII-6Tdw" base_Port="_rZAnSkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTStateMachine xmi:id="_rZAnfUIZEeaoHPpII-6Tdw" base_StateMachine="_rZAAb0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTRegion xmi:id="_rZAnfkIZEeaoHPpII-6Tdw" base_Region="_rZAAcEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTPseudostate xmi:id="_rZAnf0IZEeaoHPpII-6Tdw" base_Pseudostate="_rZAAekIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAngEIZEeaoHPpII-6Tdw" base_Port="_rZAAbUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTPseudostate xmi:id="_rZAngUIZEeaoHPpII-6Tdw" base_Pseudostate="_rZAAj0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTRegion xmi:id="_rZAngkIZEeaoHPpII-6Tdw" base_Region="_rZAAhUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTStateMachine xmi:id="_rZAng0IZEeaoHPpII-6Tdw" base_StateMachine="_rZAAhEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnhEIZEeaoHPpII-6Tdw" base_Port="_rZAAg0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnhUIZEeaoHPpII-6Tdw" base_Port="_rZAAlkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTPseudostate xmi:id="_rZAnhkIZEeaoHPpII-6Tdw" base_Pseudostate="_rZAnNEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTRegion xmi:id="_rZAnh0IZEeaoHPpII-6Tdw" base_Region="_rZAnIUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTStateMachine xmi:id="_rZAniEIZEeaoHPpII-6Tdw" base_StateMachine="_rZAnIEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAniUIZEeaoHPpII-6Tdw" base_Class="_rZAAEUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:Capsule xmi:id="_rZAnikIZEeaoHPpII-6Tdw" base_Class="_rZAAIUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAni0IZEeaoHPpII-6Tdw" base_Port="_rZAAIkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnjEIZEeaoHPpII-6Tdw" base_Port="_rZAAJEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_rZAnjUIZEeaoHPpII-6Tdw" base_Port="_rZAAI0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:CapsulePart xmi:id="_rZAnjkIZEeaoHPpII-6Tdw" base_Property="_rZAAEkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:CapsulePart xmi:id="_rZAnj0IZEeaoHPpII-6Tdw" base_Property="_rZAAFUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTConnector xmi:id="_rZAnkEIZEeaoHPpII-6Tdw" base_Connector="_rZAAGEIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTConnector xmi:id="_rZAnkUIZEeaoHPpII-6Tdw" base_Connector="_rZAAG0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTConnector xmi:id="_rZAnkkIZEeaoHPpII-6Tdw" base_Connector="_rZAAHkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTPseudostate xmi:id="_rZAnk0IZEeaoHPpII-6Tdw" base_Pseudostate="_rZAAKUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTRegion xmi:id="_rZAnlEIZEeaoHPpII-6Tdw" base_Region="_rZAAJkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTStateMachine xmi:id="_rZAnlUIZEeaoHPpII-6Tdw" base_StateMachine="_rZAAJUIZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_rZAnlkIZEeaoHPpII-6Tdw" base_State="_rZAAK0IZEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_rZAnl0IZEeaoHPpII-6Tdw" base_State="_rZAAKkIZEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_ijhs0EIcEeaoHPpII-6Tdw" base_Port="_gkBTMEIcEeaoHPpII-6Tdw"/>
+  <UMLRealTime:RTPort xmi:id="_njiqEEIcEeaoHPpII-6Tdw" base_Port="_lamAkEIcEeaoHPpII-6Tdw"/>
+  <UMLRealTimeStateMach:RTState xmi:id="_rgNMkEIfEeaoHPpII-6Tdw" base_State="_m6jQEEIfEeaoHPpII-6Tdw"/>
+</xmi:XMI>
